@@ -3,27 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="carta.css">
-    <title>Carta</title>
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="flexbox.css">
 </head>
 <body>
     <header>
-        <p>Menu</p>
+        <h1>Cartas de Yu-Gi-Oh!</h1>
     </header>
-    <nav class="carta">
-        <p><img class="blueeyes" src="Media/dragon blanco.png" alt="Carta Blue Eyes"></p>
-    </nav>
+    <main class="contenedor-principal">
+        <div class="contenedor-padre">
+            <section class="contenedor-search">
+                <h2>BUSQUEDA</h2>
 
-<main>
-    <div class="container">
-        <div class="texto">
-            <h2>Buscar</h2>
-            <label for=""></label>
-            <input type="text" placeholder="Busca tu carta"></input>
+                <form action="">
+                    <label for="">Nombre  :</label>
+                    <input type="text"> <br><br>
+
+                    <label for="">Min-precio:</label>
+                    <input type="text"> <br><br>
+
+                    <label for="">Max-precio:</label>
+                    <input type="text"> <br><br>
+
+                    <button>Buscar</button>
+                </form>
+            </section>
+            <section class="contenedor-card">
+
+                <div class="item-card">
+                    <img src="Media/ultimate.png" alt="">
+                    <div class="contenido">
+                        <h2>Blue-Eyes Ultimate Dragon</h2> <br><br>
+                        <p>"Blue-Eyes White Dragon" + "Blue-Eyes White Dragon" + "Blue-Eyes White Dragon"</p>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <img src="Media/sliferr.png" alt="">
+                    <div class="contenido">
+                        <h2>Slifer the Sky Dragon</h2> <br><br>
+                        <p>Requires 3 Tributes to Normal Summon (cannot be Normal Set). This card's Normal Summon cannot be negated. When Normal Summoned, cards and effects cannot be activated. Once per turn, during the End Phase, if this card was Special Summoned: Send it to the GY. Gains 1000 ATK/DEF for each card in your hand. If a monster(s) is Normal or Special Summoned to your opponent's field in Attack Position: That monster(s) loses 2000 ATK, then if its ATK has been reduced to 0 as a result, destroy it.</p>
+                    </div>
+                </div>
+                <div class="item-card">
+                    <img src="Media/obelisk.png" alt="">
+                    <div class="contenido">
+                        <h2>Obelisk The Tormentor</h2> <br><br>
+                        <p>Requires 3 Tributes to Normal Summon (cannot be Normal Set). This card's Normal Summon cannot be negated.<br> When Normal Summoned, cards and effects cannot be activated. Neither player can target this card with card effects. Once per turn, during the End Phase, if this card was Special Summoned: Send it to the GY. You can Tribute 2 monsters; destroy all monsters your opponent controls. This card cannot declare an attack the turn this effect is activated.</p>
+                        <h3>Price: $29.99</h3>
+                    </div>
+                </div>
+            </section>
         </div>
-
-    </div>
-</main>
-    
+    </main>
 </body>
 </html>
